@@ -23,12 +23,12 @@ function initializeApp(data) {
     document.getElementById('closewindowbutton').addEventListener('click', function () {
         liff.closeWindow();
     });
-
+    abc=doucument.getElementByID('myHeader').innerText.replace(/[\n\t]/g,"")
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
         liff.sendMessages([{
             type: 'text',
-            text: "You've successfully sent a message! Hooray!"
+            text: abc
         }, {
             type: 'sticker',
             packageId: '2',
